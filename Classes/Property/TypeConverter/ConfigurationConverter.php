@@ -27,11 +27,11 @@ use TYPO3\CMS\Extbase\Property\TypeConverter\AbstractTypeConverter;
  */
 class ConfigurationConverter extends AbstractTypeConverter implements SingletonInterface
 {
-    protected array $sourceTypes = ['integer', 'string'];
+    protected $sourceTypes = ['integer', 'string'];
 
-    protected string $targetType = Configuration::class;
+    protected $targetType = Configuration::class;
 
-    protected int $priority = 10;
+    protected $priority = 10;
 
     protected ConfigurationRepository $configurationRepository;
 
